@@ -6,13 +6,15 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user/user/user-list/user-list.component';
 import { MenuComponent } from './menu/menu/menu.component';
+import { MenuItemComponent } from './menu/menu-item/menu-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    MenuComponent
+    MenuComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,

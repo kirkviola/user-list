@@ -1,7 +1,5 @@
 <nav>
     <ul>
-        <li *ngFor="let menu of menus">
-           <a href="{{menu.route}}">{{menu.display}}</a> 
-        </li>
+        <app-menu-item [menu]="menu" *ngFor="let menu of menus"></app-menu-item>        
     </ul>
 </nav>

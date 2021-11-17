@@ -12,8 +12,7 @@ export class MenuComponent implements OnInit {
     new Menu("PRS", "/home"),
     new Menu("Users", "/users/list"),
     new Menu("About", "/about"),
-
-  ]
+  ];
 
   constructor() { }
 
