@@ -17,15 +17,15 @@ export class UserListComponent implements OnInit {
   constructor(private userSvc: UserService) { }
 
   ngOnInit(): void {
-    this.userSvc.list().subscribe(
-      res => {
+    this.userSvc.list().subscribe({
+      next: res => {
         console.debug("Users", res)
         this.users = res;
       },
-      err => {
+      error: err => {
         console.error(err);
       }
-    );
+  });
   }
 
 }

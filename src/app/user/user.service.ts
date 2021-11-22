@@ -17,4 +17,7 @@ export class UserService {
   list(): Observable<User[]>{ // Handles async, like Task from C#
     return this.httpSvc.get(`${this.baseurl}`) as Observable<User[]>;
   }
+  get(id: number): Observable<User> { // Get by id
+    return this.httpSvc.get(`${this.baseurl}/${id}`) as Observable<User>;
+  }
 }
